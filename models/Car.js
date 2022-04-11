@@ -12,10 +12,6 @@ Car.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    car_name: {
-      type: DataTypes.STRING,
-      allowNull: false,
-    },
     make_name: {
         type: DataTypes.STRING,
         allowNull: false,
