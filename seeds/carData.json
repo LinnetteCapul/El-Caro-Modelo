@@ -1,0 +1,14 @@
+[
+    {
+      "user_id": 1,
+      "make_name": "Honda",
+      "car_model": "Civic",
+      "year": 2009,
+      "mileage": 12052,
+      "color": "red",
+      "salvage_title": false,
+      "transmission": "5-speed automatic",
+      "price": 7200
+    }
+  ]
+  
