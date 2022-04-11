@@ -24,7 +24,7 @@ router.delete('/:id', async(req, res) => {
         },
     });
 
-    if (!projectData) {
+    if (!carData) {
         res.status(404).json({ message: 'No car found with this id!' });
         return;
     }
