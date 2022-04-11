@@ -12,6 +12,13 @@ Car.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    user_id: {
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'user',
+          key: 'id',
+        },
+    },
     make_name: {
         type: DataTypes.STRING,
         allowNull: false,
