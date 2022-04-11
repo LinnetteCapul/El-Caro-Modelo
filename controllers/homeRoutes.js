@@ -6,10 +6,10 @@ router.get('/', async (req, res) => {
     try {
         const carData = await Car.findAll()
 
-        const cars = carData.map((cars) => cars.get({ plain: true}));
+        const car = carData.map((cars) => cars.get({ plain: true}));
 
         res.render('homepage', { 
-            cars, 
+            ...car, 
             logged_in: req.session.logged_in 
         });
     } catch (err) {
@@ -21,10 +21,10 @@ router.get('/cars/:id', async (req, res) => {
     try {
         const carData = await Car.findByPk(req.params.id)
 
-        const cars = cars.get({ plain: true});
+        const car = carData.get({ plain: true});
 
         res.render('carpage', { 
-            cars, 
+            ...car, 
             logged_in: req.session.logged_in 
         });
     } catch (err) {
