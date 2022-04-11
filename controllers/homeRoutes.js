@@ -8,10 +8,11 @@ router.get('/', async (req, res) => {
 
         const car = carData.map((cars) => cars.get({ plain: true}));
 
-        res.render('homepage', { 
-            ...car, 
-            logged_in: req.session.logged_in 
-        });
+        // res.render('homepage', { 
+        //     car, 
+        //     logged_in: req.session.logged_in 
+        // });
+        res.json(car)
     } catch (err) {
         res.status(500).json(err)
     }
@@ -23,10 +24,11 @@ router.get('/cars/:id', async (req, res) => {
 
         const car = carData.get({ plain: true});
 
-        res.render('carpage', { 
-            ...car, 
-            logged_in: req.session.logged_in 
-        });
+        // res.render('carpage', { 
+        //     car, 
+        //     logged_in: req.session.logged_in 
+        // });
+        res.json(car)
     } catch (err) {
         res.status(500).json(err)
     }
