@@ -1,0 +1,36 @@
+[
+    {
+      "user_id": 1,
+      "make_name": "Honda",
+      "car_model": "Civic",
+      "year": 2009,
+      "mileage": 12052,
+      "color": "red",
+      "salvage_title": false,
+      "transmission": "5-speed automatic",
+      "price": 7200
+    },
+    {
+      "user_id": 2,
+      "make_name": "Ford",
+      "car_model": "F-150",
+      "year": 1999,
+      "mileage": 324009,
+      "color": "silver",
+      "salvage_title": false,
+      "transmission": "5-speed manual",
+      "price": 6500
+    },
+    {
+        "user_id": 3,
+        "make_name": "Toyota",
+        "car_model": "Prius Hybrid",
+        "year": 2013,
+        "mileage": 82000,
+        "color": "white",
+        "salvage_title": false,
+        "transmission": "Automatic",
+        "price": 8900
+      }
+  ]
+  
