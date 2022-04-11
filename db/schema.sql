@@ -1,2 +1,2 @@
-DROP IF DATABASE EXISTS usedCars_db;
+DROP DATABASE IF EXISTS usedCars_db;
 CREATE DATABASE usedCars_db;
