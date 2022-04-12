@@ -6,10 +6,10 @@ router.get('/', async (req, res) => {
     try {
         const carData = await Car.findAll()
 
-        const car = carData.map((cars) => cars.get({ plain: true}));
+        const cars = carData.map((cars) => cars.get({ plain: true}));
 
         res.render('homepage', { 
-            car,
+            cars,
             logged_in : req.session.logged_in
         });
         // res.json(car)
