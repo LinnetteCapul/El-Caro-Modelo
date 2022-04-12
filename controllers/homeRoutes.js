@@ -9,7 +9,8 @@ router.get('/', async (req, res) => {
         const car = carData.map((cars) => cars.get({ plain: true}));
 
         res.render('homepage', { 
-            car
+            car,
+            logged_in : req.session.logged_in
         });
         // res.json(car)
     } catch (err) {
@@ -25,6 +26,7 @@ router.get('/cars/:id', async (req, res) => {
 
         res.render('carpage', { 
             car, 
+            logged_in : req.session.logged_in
         });
         // res.json(car)
     } catch (err) {
@@ -32,10 +34,22 @@ router.get('/cars/:id', async (req, res) => {
     }
 })
 
+router.get('/cars/new', withAuth, async (req, res) => {
+    try {
+        res.render('newcarformpage', { 
+            logged_in : req.session.logged_in
+        });
+        // res.json(car)
+    } catch (err) {
+        res.status(500).json(err)
+    }
+})
+
+
 router.get('/login', (req, res) => {
     // If the user is already logged in, redirect the request to another route
     if (req.session.logged_in) {
-        res.replace('/');
+        res.redirect('/');
         return;
     }
 
