@@ -10,4 +10,3 @@ module.exports = {
         return parseInt(amount).toLocaleString();
     },
 }
-  
