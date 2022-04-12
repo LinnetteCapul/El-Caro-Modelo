@@ -22,15 +22,15 @@
       "price": 6500
     },
     {
-        "user_id": 3,
-        "make_name": "Toyota",
-        "car_model": "Prius Hybrid",
-        "year": 2013,
-        "mileage": 82000,
-        "color": "white",
-        "salvage_title": false,
-        "transmission": "Automatic",
-        "price": 8900
-      }
+      "user_id": 3,
+      "make_name": "Toyota",
+      "car_model": "Prius Hybrid",
+      "year": 2013,
+      "mileage": 82000,
+      "color": "white",
+      "salvage_title": false,
+      "transmission": "Automatic",
+      "price": 8900
+    }
   ]
   
