@@ -4,10 +4,17 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
     try {
-        const carData = await Car.findAll()
+        const carData = await Car.findAll({
+            include: [
+                {
+                    model: User, 
+                    attributes: ["name"]
+                }
+            ]
+        })
 
         const cars = carData.map((cars) => cars.get({ plain: true}));
-
+        console.log(cars);
         res.render('homepage', { 
             cars,
             logged_in : req.session.logged_in
