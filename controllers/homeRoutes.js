@@ -1,6 +1,7 @@
 const router = require('express').Router();
 const { Car, User } = require('../models');
 const withAuth = require('../utils/auth');
+const { Op } = require('sequelize');
 
 router.get('/', async (req, res) => {
     try {
@@ -41,7 +42,30 @@ router.get('/cars/:id', async (req, res) => {
     }
 })
 
-router.get('/cars/new', withAuth, async (req, res) => {
+router.get('/search/:term', async (req, res) => {
+    try {
+        const carData = await Car.findAll({
+            where: {
+              [Op.or]: [
+               {make_name: { [Op.like]: '%' + req.params.term + '%' }},
+               {car_model: { [Op.like]: '%' + req.params.term + '%' }}
+              ]
+            }
+          });
+
+        const cars = carData.map((cars) => cars.get({ plain: true}));
+
+        res.render('carpage', { 
+            cars, 
+            logged_in : req.session.logged_in
+        });
+        // res.json(cars)
+    } catch (err) {
+        res.status(500).json(err)
+    }
+})
+
+router.get('/new/car', withAuth, async (req, res) => {
     try {
         res.render('newcarformpage', { 
             logged_in : req.session.logged_in
@@ -56,7 +80,7 @@ router.get('/cars/new', withAuth, async (req, res) => {
 router.get('/login', (req, res) => {
     // If the user is already logged in, redirect the request to another route
     if (req.session.logged_in) {
-        res.redirect('/');
+        res.render('/');
         return;
     }
 
