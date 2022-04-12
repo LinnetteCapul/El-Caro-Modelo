@@ -1,20 +1,26 @@
-{{#each projects as |project| }}
-<div class="row mb-4 project">
+{{#each cars as |car| }}
+<div class="row mb-4 car">
   <div class="col-md-5">
     <h2>
       {{{get_emoji}}}
-      <a href="/project/{{project.id}}">{{project.name}}</a>
+      <a href="/car/{{car.id}}">{{car.make_name}}</a>
+      <a>{{car.car_model}}</a>
     </h2>
     <p>
-      <span for="img" aria-label="money">💲</span>
-      <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
-      needed!
+      <span for="img" aria-label="Price">💲</span>
+      <span class="dollar-amount">{{car_price}}</span>
+      <span class="year">{{year}}</span>
+      <span class="mileage">{{mileage}}</span>
+      <span class="car-color">{{color}}</span>
+      <span class="salvage-title">{{salvage_title}}</span>
+      <span class="transmission">{{transmission}}</span>
+      
     </p>
-    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
+    <p>Posted by {{car.user_id}} on {{format_date car.date_created}}</p>
   </div>
   <div class="col-md-7">
     <p>
-      {{project.description}}
+      {{car}}
     </p>
   </div>
 </div>
