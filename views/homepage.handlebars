@@ -31,7 +31,7 @@
     </h2>
     <p>
       <span for="img" aria-label="Price">💲</span>
-      <span class="dollar-amount">{{car_price}}</span>
+      <span class="dollar-amount">{{price}}</span>
       <span class="year">{{year}}</span>
       <span class="mileage">{{mileage}}</span>
       <span class="car-color">{{color}}</span>
@@ -39,11 +39,11 @@
       <span class="transmission">{{transmission}}</span>
       
     </p>
-    <p>Posted by {{car.user_id}} on {{format_date car.date_created}}</p>
+    {{!-- <p>Posted by {{car.user_id}} on {{format_date car.date_created}}</p> --}}
   </div>
   <div class="col-md-7">
     <p>
-      {{car}}
+      {{car.make_name}}
     </p>
   </div>
 </div>
