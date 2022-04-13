@@ -54,7 +54,5 @@ async function newFormHandler(event) {
     }, false);
   
 
-  //submit button needs work
-submitBtn
-   .addEventListener('click', newFormHandler);
+submitBtn.addEventListener('click', newFormHandler);
 
