@@ -45,11 +45,15 @@ Car.init(
     },
     salvage_title: {
         type: DataTypes.BOOLEAN,
+        defaultValue: false,
     },
     transmission: {
         type: DataTypes.STRING,
         allowNull: false,
-    }
+    },
+   imageUrl: {
+      type: DataTypes.STRING,
+  }
   },
   {
     sequelize,
