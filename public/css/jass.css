@@ -419,15 +419,16 @@ button {
   margin: 0;
 }
 
-a {
-  color: #1b89bc;
+/* a {
+  color: #000000;
   text-decoration: none;
 }
 
 a:hover {
-  color: #065b83;
-  text-decoration: underline;
-}
+  text-decoration: none;
+  color: rgb(37, 34, 34);
+  background-color: rgb(245, 236, 236);
+} */
 
 /* HEIGHT / WIDTH UTILS */
 .w-100 {
