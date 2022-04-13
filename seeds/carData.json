@@ -6,7 +6,7 @@
       "year": 2009,
       "mileage": 12052,
       "color": "red",
-      "salvage_title": false,
+      "salvage_title": "Yes",
       "transmission": "5-speed automatic",
       "price": 7200,
       "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649882031/2020-Honda-Civic-Si-HPT-Sedan-41_uygrn3.jpg"
@@ -18,7 +18,7 @@
       "year": 1999,
       "mileage": 324009,
       "color": "silver",
-      "salvage_title": false,
+      "salvage_title": "Yes",
       "transmission": "5-speed manual",
       "price": 6500,
       "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649882122/JDPA_2021_20Ford_20F-150_20Tremor_20Silver_20Front_20Quarter_20View_cxlbic.jpg"
@@ -30,7 +30,7 @@
       "year": 2013,
       "mileage": 82000,
       "color": "white",
-      "salvage_title": false,
+      "salvage_title": "No",
       "transmission": "Automatic",
       "price": 8900,
       "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649882167/2020-toyota-prius-mmp-1-1565732347.jpg_wyk9sc.jpg"
