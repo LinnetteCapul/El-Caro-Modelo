@@ -22,6 +22,12 @@ header, .project:not(:last-child) {
     font-weight: bold;
     margin-left: -5px;
   }
+
+  .listImage{
+    height: 200px;
+  }
+  
+
   
   .elcaro{
     font-size: 65px;
@@ -46,3 +52,4 @@ h2 a:-webkit-any-link:hover {
   color: rgb(37, 34, 34);
   background-color: rgb(245, 236, 236);
 }
+
