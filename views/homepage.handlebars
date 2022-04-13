@@ -13,16 +13,15 @@
 <div class="row mb-4 car">
   <div class="col-md-5">
     <h2>
-      <a href="/cars/{{car.id}}">{{car.make_name}}</a>
-      <a>{{car.car_model}}</a>
+      <a href="/cars/{{car.id}}">{{car.make_name}} {{car.car_model}}</a>
     </h2>
     <p>
       <span for="img" aria-label="Price">💲</span>
-      <span class="dollar-amount">{{car.price}}</span>
-      <span class="year">Year: {{car.year}}</span>
-      <span class="mileage">Mileage: {{car.mileage}}</span>
-      <span class="car-color">Color: {{car.color}}</span>
-      <span class="salvage-title">Salvage Title: {{car.salvage_title}}</span>
+      <span class="dollar-amount">{{car.price}}</span></br>
+      <span class="year">Year: {{car.year}}</span></br>
+      <span class="mileage">Mileage: {{car.mileage}}</span></br>
+      <span class="car-color">Color: {{car.color}}</span></br>
+      <span class="salvage-title">Salvage Title: {{car.salvage_title}}</span></br>
       <span class="transmission">Transmission: {{car.transmission}}</span>
       
     </p>
