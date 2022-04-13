@@ -29,10 +29,10 @@ router.get('/', async (req, res) => {
 router.get('/cars/:id', async (req, res) => {
     try {
         const carData = await Car.findByPk(req.params.id)
-
+        
         const car = carData.get({ plain: true});
 
-        res.render('carpage', { 
+        res.render('singlecarpage', { 
             car, 
             logged_in : req.session.logged_in
         });

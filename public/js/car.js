@@ -2,7 +2,6 @@
 
 const searchInput = document.querySelector('#search-input');
 const searchButton = document.querySelector('#search-btn');
-const backButton = document.querySelector('#back-btn');
 
 searchButton.addEventListener('click', function(event) {
     event.preventDefault();
@@ -11,8 +10,3 @@ searchButton.addEventListener('click', function(event) {
     document.location.replace('/search/' + term)
 })
 
-backButton.addEventListener('click', function(event) {
-    event.preventDefault();
-
-    document.location.replace('/')
-})
