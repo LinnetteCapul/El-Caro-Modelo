@@ -1,3 +1,4 @@
+const { response } = require('express');
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
@@ -11,6 +12,13 @@ Car.init(
       allowNull: false,
       primaryKey: true,
       autoIncrement: true,
+    },
+    user_id: {
+        type: DataTypes.INTEGER,
+        references: {
+          model: 'user',
+          key: 'id',
+        },
     },
     make_name: {
         type: DataTypes.STRING,
@@ -37,20 +45,24 @@ Car.init(
         allowNull: false,
     },
     salvage_title: {
-        type: DataTypes.BOOLEAN,
+        type: DataTypes.STRING,
+      
     },
     transmission: {
         type: DataTypes.STRING,
         allowNull: false,
-    }
+    },
+   imageUrl: {
+      type: DataTypes.STRING,
+  }
   },
   {
     sequelize,
-    timestamps: false,
     freezeTableName: true,
     underscored: true,
     modelName: 'car',
   }
+  
 );
 
 module.exports = Car;

@@ -1,0 +1,39 @@
+[
+    {
+      "user_id": 1,
+      "make_name": "Honda",
+      "car_model": "Civic",
+      "year": 2009,
+      "mileage": 12052,
+      "color": "red",
+      "salvage_title": "Yes",
+      "transmission": "5-speed automatic",
+      "price": 7200,
+      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649882031/2020-Honda-Civic-Si-HPT-Sedan-41_uygrn3.jpg"
+    },
+    {
+      "user_id": 2,
+      "make_name": "Ford",
+      "car_model": "F-150",
+      "year": 1999,
+      "mileage": 324009,
+      "color": "silver",
+      "salvage_title": "Yes",
+      "transmission": "5-speed manual",
+      "price": 6500,
+      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649882122/JDPA_2021_20Ford_20F-150_20Tremor_20Silver_20Front_20Quarter_20View_cxlbic.jpg"
+    },
+    {
+      "user_id": 3,
+      "make_name": "Toyota",
+      "car_model": "Prius Hybrid",
+      "year": 2013,
+      "mileage": 82000,
+      "color": "white",
+      "salvage_title": "No",
+      "transmission": "Automatic",
+      "price": 8900,
+      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649882167/2020-toyota-prius-mmp-1-1565732347.jpg_wyk9sc.jpg"
+    }
+  ]
+  
