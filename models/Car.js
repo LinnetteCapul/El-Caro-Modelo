@@ -45,8 +45,8 @@ Car.init(
         allowNull: false,
     },
     salvage_title: {
-        type: DataTypes.BOOLEAN,
-        defaultValue: false,
+        type: DataTypes.STRING,
+      
     },
     transmission: {
         type: DataTypes.STRING,
