@@ -8,7 +8,8 @@
       "color": "red",
       "salvage_title": false,
       "transmission": "5-speed automatic",
-      "price": 7200
+      "price": 7200,
+      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649882031/2020-Honda-Civic-Si-HPT-Sedan-41_uygrn3.jpg"
     },
     {
       "user_id": 2,
@@ -19,7 +20,8 @@
       "color": "silver",
       "salvage_title": false,
       "transmission": "5-speed manual",
-      "price": 6500
+      "price": 6500,
+      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649882122/JDPA_2021_20Ford_20F-150_20Tremor_20Silver_20Front_20Quarter_20View_cxlbic.jpg"
     },
     {
       "user_id": 3,
@@ -30,7 +32,8 @@
       "color": "white",
       "salvage_title": false,
       "transmission": "Automatic",
-      "price": 8900
+      "price": 8900,
+      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649882167/2020-toyota-prius-mmp-1-1565732347.jpg_wyk9sc.jpg"
     }
   ]
   
