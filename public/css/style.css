@@ -52,3 +52,8 @@ h2 a:-webkit-any-link:hover {
   background-color: rgb(248, 242, 242);
 }
 
+img{
+  max-width: 270px;
+  height: auto;
+  object-fit: contain;
+}
