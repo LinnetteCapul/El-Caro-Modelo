@@ -1,3 +1,4 @@
+const { response } = require('express');
 const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
@@ -61,6 +62,7 @@ Car.init(
     underscored: true,
     modelName: 'car',
   }
+  
 );
 
 module.exports = Car;

@@ -11,8 +11,10 @@ async function newFormHandler(event) {
     const mileage = document.querySelector('#mileage').value;
     const color = document.querySelector('#color').value;
     const transmission = document.querySelector('#transmission').value;
-    //const salvage_title = document.querySelector('.salvage_title:checked') ? true : false;
+    const salvage_title = document.querySelector('.salvage_title:checked') ? "YES": "NO";
   
+    
+
     const response = await fetch(`/api/cars/new`, {
       method: 'POST',
       body: JSON.stringify({
@@ -23,7 +25,7 @@ async function newFormHandler(event) {
         price,
         color,
         transmission,
-        //salvage_title,
+        salvage_title,
         imageUrl,
       }),
       headers: {
