@@ -24,16 +24,11 @@
     <label class="input-group-text" for="inputGroupSelect01">Salvage Title</label>
   </div>
 
-    {{#if salvage_title}}
-      <p class="salvage_title">
-        Has Salvage Title.
-      </p>
-    {{/if}}
-  {{!-- <select class="custom-select" id="inputGroupSelect01">
-    <option selected>Choose...</option>
-    <option value="1">Yes</option>
-    <option value="2">No</option>
-  </select> --}}
+ <input type="checkbox" class="salvage_title" name="salvage_title" value="true" />
+    <label for="salvage_title">
+      Check box if this car has a salvage title.
+    </label>
+
 </div>
 <div class="input-group mb-3">
   <div class="input-group-prepend">

@@ -11,7 +11,7 @@ async function newFormHandler(event) {
     const mileage = document.querySelector('#mileage').value;
     const color = document.querySelector('#color').value;
     const transmission = document.querySelector('#transmission').value;
-    //const salvage_title = document.querySelector('.salvage_title:checked') ? true : false;
+    const salvage_title = document.querySelector('.salvage_title:checked') ? true : false;
   
     const response = await fetch(`/api/cars/new`, {
       method: 'POST',
@@ -23,7 +23,7 @@ async function newFormHandler(event) {
         price,
         color,
         transmission,
-        //salvage_title,
+        salvage_title,
         imageUrl,
       }),
       headers: {
@@ -52,7 +52,5 @@ async function newFormHandler(event) {
     }, false);
   
 
-  //submit button needs work
-submitBtn
-   .addEventListener('click', newFormHandler);
+submitBtn.addEventListener('click', newFormHandler);
 
