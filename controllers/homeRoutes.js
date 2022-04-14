@@ -30,7 +30,14 @@ router.get('/', async (req, res) => {
 // get a car by its id 
 router.get('/cars/:id', async (req, res) => {
     try {
-        const carData = await Car.findByPk(req.params.id)
+        const carData = await Car.findByPk(req.params.id, {
+            include: [
+                {
+                    model: User, 
+                    attributes: ["name"]
+                }
+            ]
+        })
         
         // serialize data so template can read it
         const car = carData.get({ plain: true});
@@ -55,7 +62,13 @@ router.get('/search/:term', async (req, res) => {
                {make_name: { [Op.like]: '%' + req.params.term + '%' }},
                {car_model: { [Op.like]: '%' + req.params.term + '%' }}
               ]
-            }
+            },
+            include: [
+                {
+                    model: User, 
+                    attributes: ["name"]
+                }
+            ]
           });
         
         // serialize data so template can read it
