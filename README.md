@@ -14,6 +14,7 @@ This web application allows users to search used cars for sale and post a new ca
   * [Links](#links)
   * [Installation](#installation)
   * [Usage](#usage)
+  * [Technology Used](#technology-used)
   * [Contribution Guidelines](#contribution-guidelines)
   * [Questions](#questions)
   * [Screenshots](#screenshots)
@@ -34,6 +35,13 @@ This web application allows users to search used cars for sale and post a new ca
   ## Usage
   
   When the user opens the web application, they are able to search for a car on the homepage. If the user would like post a car for sell, they would first have to sign up for an account and then the option to post a car will be available on the homepage. When the user is done with their session, they can log out and the session will be terminated. The user has the ability to log back into their profile and post more cars if they desire to. The web application has the ability to search cars based on makes or models posted on *El Caro Modelo*, retrieving data from the API. 
+  
+  
+  ## Technology Used
+  
+* HTML, CSS, JAVASCRIPT
+* Node.js, Express.js, MySQL, Sequelize ORM, Cloudinary Widget, Heroku
+
  
   
   ## Contribution Guidelines
