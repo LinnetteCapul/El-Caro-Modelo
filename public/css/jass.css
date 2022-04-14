@@ -930,7 +930,10 @@ a:hover {
 }
 
 .bg-light {
-  background-color: #d9e9e8 !important;
+  background-color: #457B9D!important;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-style:solid;
 }
 
 .bg-dark {
