@@ -15,14 +15,12 @@ This web application allows users to search used cars for sale and post a new ca
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contribution Guidelines](#contribution-guidelines)
-  * [Tests](#tests)
   * [Questions](#questions)
   * [Screenshots](#screenshots)
 
 
   ## Links
   
-
  * GitHub Repository Link: https://github.com/LinnetteCapul/El-Caro-Modelo
 
  * Application Link: https://obscure-basin-42076.herokuapp.com/
@@ -31,7 +29,7 @@ This web application allows users to search used cars for sale and post a new ca
   
   ## Installation
   
-  To use this application, the user will need to refer to the deployed application link listed under "Links" section.
+  To use this application, the user will need to refer to the deployed application link listed under the "Links" section.
   
   ## Usage
   
@@ -42,9 +40,6 @@ This web application allows users to search used cars for sale and post a new ca
   
 If you would like to contribute to this project, please reach out to any of the original contributors. Our contact information can be found below in the "Questions" section.
   
-  ## Tests
-  
-  No test provided at this time.
   
   ## Questions?
 
@@ -62,21 +57,31 @@ Berj Ghazarian:
 
 Daniel Hillsman: 
   * GitHub Profile: [danielhillsman](https://github.com/danielhillsman)
-  * Email: daniel.loves.junk@gmail
+  * Email: daniel.loves.junk@gmail.com
 
   ## Screenshots
   
-  ![modelo-screenshot01]()
-
+  ![modelo-screenshot01](https://raw.githubusercontent.com/LinnetteCapul/El-Caro-Modelo/develop/assets/images/modelo-screenshot01.JPG)
   
+  *El Caro Modelo* homepage that displays car listings available in the database with search bar.
+
+   <br>
+
+  ![modelo-screenshot03](https://raw.githubusercontent.com/LinnetteCapul/El-Caro-Modelo/develop/assets/images/modelo-screenshot03.JPG) 
+
+Log in and sign up page for user to log in or create an account before posting a car listing.
+
+
   <br>
   
-  ![modelo-screenshot02]()
+  ![modelo-screenshot02](https://raw.githubusercontent.com/LinnetteCapul/El-Caro-Modelo/develop/assets/images/modelo-screenshot02.JPG)
+
+  "Sell Your Car" form of vehicle details to post a new listing of a car.
   
 
-  <br>
 
-  ![modelo-screenshot03]()
+
+  
 
   
  
