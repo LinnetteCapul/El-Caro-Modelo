@@ -21,7 +21,7 @@
       "salvage_title": "Yes",
       "transmission": "5-speed manual",
       "price": 6500,
-      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649882122/JDPA_2021_20Ford_20F-150_20Tremor_20Silver_20Front_20Quarter_20View_cxlbic.jpg"
+      "imageUrl": "https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/f05ef6f8-a101-44e5-b09b-ce435eaf7928/297f521c-46a2-4696-b8e9-3e2b155ebf76.png"
     },
     {
       "user_id": 3,
@@ -34,6 +34,42 @@
       "transmission": "Automatic",
       "price": 8900,
       "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649882167/2020-toyota-prius-mmp-1-1565732347.jpg_wyk9sc.jpg"
+    },
+    {
+      "user_id": 4,
+      "make_name": "Honda",
+      "car_model": "Odyssy",
+      "year": 2007,
+      "mileage": 160400,
+      "color": "silver",
+      "salvage_title": "No",
+      "transmission": "6-speed automatic",
+      "price": 8900,
+      "imageUrl": "https://automanager.blob.core.windows.net/wmphotos/015228/5b391fada6704d7eb3af52075c6e0f28/bb1351d210_800.jpg"
+    },
+    {
+      "user_id": 5,
+      "make_name": "Ford",
+      "car_model": "Mustang",
+      "year": 2003,
+      "mileage": 82000,
+      "color": "white",
+      "salvage_title": "Yes",
+      "transmission": "Automatic",
+      "price": 3500,
+      "imageUrl": "https://static.wixstatic.com/media/4cbdd0_80e70c2deab54208898d4d77318c5163.jpg/v1/fill/w_450,h_241,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/4cbdd0_80e70c2deab54208898d4d77318c5163.jpg"
+    },
+    {
+      "user_id": 6,
+      "make_name": "Toyota",
+      "car_model": "Prius",
+      "year": 2017,
+      "mileage": 52000,
+      "color": "green",
+      "salvage_title": "No",
+      "transmission": "Automatic",
+      "price": 8900,
+      "imageUrl": "https://images.hgmsites.net/hug/2017-toyota-prius-prime-test-drive-ojai-california-sep-2016_100568169_h.jpg"
     }
   ]
   
