@@ -17,11 +17,11 @@
       "car_model": "F-150",
       "year": 1999,
       "mileage": 324009,
-      "color": "silver",
+      "color": "red",
       "salvage_title": "Yes",
       "transmission": "5-speed manual",
       "price": 6500,
-      "imageUrl": "https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/f05ef6f8-a101-44e5-b09b-ce435eaf7928/297f521c-46a2-4696-b8e9-3e2b155ebf76.png"
+      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649900452/297f521c-46a2-4696-b8e9-3e2b155ebf76_klba2q.png"
     },
     {
       "user_id": 3,
@@ -45,7 +45,7 @@
       "salvage_title": "No",
       "transmission": "6-speed automatic",
       "price": 8900,
-      "imageUrl": "https://automanager.blob.core.windows.net/wmphotos/015228/5b391fada6704d7eb3af52075c6e0f28/bb1351d210_800.jpg"
+      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649900521/bb1351d210_800_uxjcif.jpg"
     },
     {
       "user_id": 5,
@@ -53,11 +53,11 @@
       "car_model": "Mustang",
       "year": 2003,
       "mileage": 82000,
-      "color": "white",
+      "color": "yellow",
       "salvage_title": "Yes",
       "transmission": "Automatic",
       "price": 3500,
-      "imageUrl": "https://static.wixstatic.com/media/4cbdd0_80e70c2deab54208898d4d77318c5163.jpg/v1/fill/w_450,h_241,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/4cbdd0_80e70c2deab54208898d4d77318c5163.jpg"
+      "imageUrl": "https://res.cloudinary.com/elcaromodelo/image/upload/v1649900572/4cbdd0_80e70c2deab54208898d4d77318c5163_xv4uvw.png"
     },
     {
       "user_id": 6,
@@ -65,7 +65,7 @@
       "car_model": "Prius",
       "year": 2017,
       "mileage": 52000,
-      "color": "green",
+      "color": "blue",
       "salvage_title": "No",
       "transmission": "Automatic",
       "price": 8900,
