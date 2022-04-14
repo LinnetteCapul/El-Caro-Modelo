@@ -1,3 +1,4 @@
+// Login function
 const loginFormHandler = async (event) => {
     event.preventDefault();
   
@@ -23,7 +24,7 @@ const loginFormHandler = async (event) => {
       }
     }
   };
-  
+  // signup function
   const signupFormHandler = async (event) => {
     event.preventDefault();
   
@@ -46,6 +47,7 @@ const loginFormHandler = async (event) => {
     }
   };
   
+  // addEventListeners for sumbit buttons
   document
     .querySelector('.login-form')
     .addEventListener('submit', loginFormHandler);

@@ -5,6 +5,7 @@ const { Op } = require('sequelize');
 
 router.get('/', async (req, res) => {
     try {
+        // get all cars and join with user data
         const carData = await Car.findAll({
             include: [
                 {
@@ -13,9 +14,9 @@ router.get('/', async (req, res) => {
                 }
             ]
         })
-
+        // serialize data so template can read it
         const cars = carData.map((cars) => cars.get({ plain: true}));
-        console.log(cars);
+    
         res.render('homepage', { 
             cars,
             logged_in : req.session.logged_in
@@ -26,10 +27,12 @@ router.get('/', async (req, res) => {
     }
 })
 
+// get a car by its id 
 router.get('/cars/:id', async (req, res) => {
     try {
         const carData = await Car.findByPk(req.params.id)
         
+        // serialize data so template can read it
         const car = carData.get({ plain: true});
 
         res.render('singlecarpage', { 
@@ -42,8 +45,10 @@ router.get('/cars/:id', async (req, res) => {
     }
 })
 
+// search a car by the term
 router.get('/search/:term', async (req, res) => {
     try {
+        // be able to find a car based on the term 
         const carData = await Car.findAll({
             where: {
               [Op.or]: [
@@ -52,7 +57,8 @@ router.get('/search/:term', async (req, res) => {
               ]
             }
           });
-
+        
+        // serialize data so template can read it
         const cars = carData.map((cars) => cars.get({ plain: true}));
 
         res.render('carpage', { 
@@ -65,6 +71,7 @@ router.get('/search/:term', async (req, res) => {
     }
 })
 
+// route to get the form to post a new car, use withAuth to prevent access to route
 router.get('/new/car', withAuth, async (req, res) => {
     try {
         res.render('newcarformpage', { 
@@ -76,7 +83,7 @@ router.get('/new/car', withAuth, async (req, res) => {
     }
 })
 
-
+// route to login
 router.get('/login', (req, res) => {
     // If the user is already logged in, redirect the request to another route
     if (req.session.logged_in) {
