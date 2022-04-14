@@ -1,21 +1,22 @@
+<!-- html to generate list of cars based on search-->
 <div>
     <button class="btn btn-outline-success my-2 my-sm-0" id="back-btn" type="submit">Back</button>
 </div>
 
 {{#each cars as |car| }}
-<div class="row mb-4 car">
+<div class="car-card row mb-4 car">
   <div class="col-md-5">
     <h2>
       <a href="/cars/{{car.id}}">{{car.make_name}} {{car.car_model}}</a>
     </h2>
     <p>
-     <span for="img" aria-label="Price">💲</span>
+          <span for="img" aria-label="Price">💲</span>
       <span class="dollar-amount">{{car.price}}</span></br>
-      <span class="year">Year: {{car.year}}</span></br>
-      <span class="mileage">Mileage: {{car.mileage}}</span></br>
-      <span class="car-color">Color: {{car.color}}</span></br>
-      <span class="salvage-title">Salvage Title: {{car.salvage_title}}</span></br>
-      <span class="transmission">Transmission: {{car.transmission}}</span>
+      <span style="font-weight:bolder" class="year">Year: {{car.year}}</span></br>
+      <span style="font-weight:bolder" class="mileage">Mileage: {{car.mileage}}</span></br>
+      <span style="font-weight:bolder" class="car-color">Color: {{car.color}}</span></br>
+      <span style="font-weight:bolder" class="salvage-title">Salvage Title: {{car.salvage_title}}</span></br>
+      <span style="font-weight:bolder" class="transmission">Transmission: {{car.transmission}}</span>
       
     </p>
     <p>Posted by {{car.user.name}} on {{format_date car.createdAt}}</p>
